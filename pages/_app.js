@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import App, { Container } from 'next/app'
 import { Provider } from 'react-redux'
 import withRedux from 'next-redux-wrapper'
@@ -17,7 +17,7 @@ class MyApp extends App {
     return (
       <Container>
         <Provider store={store}>
-          <Component{...pageProps} />
+          <Component {...pageProps} />
         </Provider>
       </Container>
     )

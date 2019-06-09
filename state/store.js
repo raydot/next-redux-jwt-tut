@@ -13,3 +13,6 @@ export const initStore = (initialState = {}) => {
     composeWithDevTools(applyMiddleware(thunkMiddleware, logger))
   )
 }
+
+
+// Notice: We are using thunk here to handle async actions related to auth APIs.

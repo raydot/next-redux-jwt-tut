@@ -23,7 +23,7 @@ class LoginPage extends Component {
   render() {
     return (
       <div>
-        <Login onChange = { this.handleLoginSubmit }
+        <Login onChange = { this.handleLoginSubmit } />
       </div>
     )
   }

@@ -10,7 +10,7 @@ class Login extends Component {
     }
   }
 
-  handlePhoneNumChange=(e) => {
+  handlePhoneNumChange= (e) => {
     this.setState({
       phoneNumber: e.target.value
     })
@@ -28,7 +28,7 @@ class Login extends Component {
     })
   }
 
-  handleSubmit = async(event) => {
+  handleSubmit = async (event) => {
     event.preventDefault()
     this.props.onChange(this.state)
   }
